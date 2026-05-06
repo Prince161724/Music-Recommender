@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import './App.css'
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+const API = import.meta.env.VITE_API_URL || 'https://music-backend-kmep.onrender.com'
 const GOOGLE_CLIENT_ID = '464017570662-tqv6a8jjq4f50cc1kuq426tjmjbfiipe.apps.googleusercontent.com'
 const PLACEHOLDER_HASH = '2a96cbd8b46e442fc41c2b86b821562f'
 const PER_PAGE = 10
