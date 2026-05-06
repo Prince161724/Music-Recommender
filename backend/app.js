@@ -16,6 +16,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// ===== HEALTH CHECK ROUTE =====
+app.get('/health', (req, res) => {
+    res.status(200).send('Server is awake and healthy');
+});
+
 // ===== CONNECT TO MONGODB =====
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('✅ MongoDB connected'))
